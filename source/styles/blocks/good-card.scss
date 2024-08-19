@@ -1,0 +1,29 @@
+.good-card__link {
+  text-decoration: none;
+}
+
+.good-card__title {
+  font-family: $header-primary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.good-card__feature {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.good-card__button {
+  font-family: $header-primary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.good-card__button--take-all {
+  color: #444444;
+  background-color: #f2f2f2;
+}
