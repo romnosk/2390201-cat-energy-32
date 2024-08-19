@@ -1,0 +1,21 @@
+.ration-type__list {
+  list-style-type: none;
+}
+
+.ration-type__item-title {
+  font-family: $header-primary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.ration-type__link {
+  font-family: $header-primary-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}

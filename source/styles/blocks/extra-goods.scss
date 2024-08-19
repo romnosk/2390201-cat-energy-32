@@ -1,0 +1,33 @@
+.extra-goods__title {
+  font-family: $header-primary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.extra-goods__list {
+  list-style-type: none;
+}
+
+.extra-goods__item-title {
+  font-family: $header-primary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.extra-goods__item-size,
+.extra-goods__item-price {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.extra-goods__take-all-slogan {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: rgba(104, 183, 56, 0.85);
+}
