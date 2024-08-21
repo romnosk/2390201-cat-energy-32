@@ -2,13 +2,17 @@
   list-style-type: none;
 }
 
+.ration-type__item {
+  background-color: $darker-background-color;
+}
+
 .ration-type__item-title {
   font-family: $header-primary-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  color: #000000;
+  color: $header-primary-color;
 }
 
 .ration-type__link {
@@ -16,6 +20,6 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: #000000;
+  color: $header-primary-color;
   text-decoration: none;
 }

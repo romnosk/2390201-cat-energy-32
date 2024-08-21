@@ -1,9 +1,13 @@
+.example {
+  background-color: #eaeaea;
+}
+
 .example__title {
   font-family: $header-primary-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  color: #000000;
+  color: $header-primary-color;
 }
 
 .example__number {
@@ -12,7 +16,7 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-  color: #000000;
+  color: $header-primary-color;
 }
 
 .example__description {
@@ -26,7 +30,7 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000000;
+  color: $header-primary-color;
 }
 
 .example__slider {

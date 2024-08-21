@@ -1,0 +1,14 @@
+.extra-card__title {
+  font-family: $header-primary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.extra-card__measure,
+.extra-card__price {
+  font-size: 14px;
+  line-height: 14px;
+}
