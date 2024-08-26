@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
+  <title>Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
@@ -15,10 +15,14 @@
 
     <div class="main-header__logo logo-trademark logo-words">
       <a class="logo-trademark" href="index.html">
-        <img class="logo-trademark__image" src="#" width="33" height="38" alt="Торговая марка - кот в плаще.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/trademark-desktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/trademark-tablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="logo-trademark__image" src="images/trademark-mobile.svg" width="33" height="38" alt="Торговая марка - кот в плаще.">
+        </picture>
       </a>
       <a class="logo-words" href="index.html">
-        <img class="logo-words__image" src="#" width="101" height="18" alt="логотип CAT Energy.">
+        <img class="logo-words__image" src="images/logo-cat-energy.svg" width="101" height="18" alt="логотип CAT Energy.">
       </a>
     </div>
 
@@ -125,7 +129,7 @@
   <footer class="main-footer">
     <div class="main-footer__logo logo-words">
       <a class="logo-words" href="index.html">
-        <img class="logo-words__image" src="#" width="101" height="18" alt="CAT Energy.">
+        <img class="logo-words__image" src="images/logo-cat-energy.svg" width="128" height="24" alt="CAT Energy.">
       </a>
     </div>
 

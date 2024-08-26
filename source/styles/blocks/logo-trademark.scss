@@ -1,3 +1,11 @@
-//.logo-trademark{
-//
-//}
+.logo-trademark {
+  text-decoration: none;
+}
+
+.logo-trademark:hover {
+  opacity: 0.8;
+}
+
+.logo-trademark:active {
+  opacity: 0.5;
+}

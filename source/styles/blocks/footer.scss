@@ -1,3 +1,13 @@
 .main-footer {
   background-color: $darker-background-color;
 }
+
+.main-footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 280px;
+  margin: 0;
+  padding: 0;
+}

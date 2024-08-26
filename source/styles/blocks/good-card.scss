@@ -23,7 +23,26 @@
   line-height: 20px;
 }
 
-.good-card__button--take-all {
+.good-card__title--show-all {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0;
+  padding-top: 78px;
+  background-repeat: no-repeat;
+  background-image: url("../../icons/stack.svg#icon-plus");
+  background-size: 30px 30px;
+  background-position: center 25px;
+}
+
+.good-card__feature--show-all {
+  text-align: center;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 21px;
+}
+
+.good-card__button--show-all {
   color: $text-primary-color;
   background-color: #f2f2f2;
 }
