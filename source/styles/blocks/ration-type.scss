@@ -1,9 +1,27 @@
 .ration-type__list {
   list-style-type: none;
+  padding: 0;
 }
 
 .ration-type__item {
+  box-sizing: border-box;
+  min-width: 280px;
   background-color: $darker-background-color;
+  background-repeat: no-repeat;
+  margin: 20px;
+  padding: 20px;
+}
+
+.ration-type__item--slim {
+  background-image: url("../../icons/stack.svg#icon-cat-slim");
+  background-size: 50px 53px;
+  background-position: 20px 20px;
+}
+
+.ration-type__item--pro {
+  background-image: url("../../icons/stack.svg#icon-cat-pro");
+  background-size: 67px 50px;
+  background-position: 13px 24px;
 }
 
 .ration-type__item-title {
@@ -13,6 +31,7 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $header-primary-color;
+  margin: 10px 0 0 70px;
 }
 
 .ration-type__link {

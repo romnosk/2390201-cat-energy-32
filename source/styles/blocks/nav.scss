@@ -1,3 +1,14 @@
 .main-nav__list {
   list-style-type: none;
 }
+
+.main-nav__toggle {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-image: url("../../icons/stack.svg#icon-menu-cross");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $light-background-color;
+  border: none;
+}
