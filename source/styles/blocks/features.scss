@@ -16,15 +16,17 @@
 }
 
 .features__item {
-  position: relative;
-  margin: 0 0 24px 80px;
-  min-width: 200px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  margin: 0 0 24px;
+  min-width: 280px;
 }
 
 .features__item::before {
-  position: absolute;
-  left: -80px;
-  bottom: center;
+  display: block;
+  flex-shrink: 0;
+  margin-right: 20px;
   width: 60px;
   height: 60px;
   background-color: #68b738;
