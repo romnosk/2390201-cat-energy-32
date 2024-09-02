@@ -4,10 +4,18 @@
   font-size: 20px;
   line-height: 30px;
   color: #444444;
+  text-transform: uppercase;
+  min-width: 280px;
+  min-height: 56px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .subscribe-form__button {
   font-size: 20px;
   line-height: 26px;
   border: none;
+  min-width: 280px;
+  min-height: 56px;
 }

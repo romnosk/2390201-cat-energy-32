@@ -1,5 +1,9 @@
 .hero {
   background-color: rgba(104, 183, 56, 0.85);
+
+  @media (min-width: $tablet-width) {
+    background-color: $light-background-color;
+  }
 }
 
 .hero__title {
@@ -9,6 +13,13 @@
   line-height: 36px;
   text-align: center;
   color: $light-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $header-primary-color;
+  }
 }
 
 .hero__slogan {
@@ -18,6 +29,13 @@
   text-align: center;
   text-transform: uppercase;
   color: $light-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: $header-primary-color;
+  }
 }
 
 .hero__find-program {

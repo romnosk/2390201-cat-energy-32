@@ -1,5 +1,22 @@
 .main-nav__list {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+  text-align: center;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 436px;
+    gap: 10px 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+    gap: 10px 31px;
+  }
 }
 
 .main-nav__toggle {
@@ -11,4 +28,8 @@
   background-position: center;
   background-color: $light-background-color;
   border: none;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }
