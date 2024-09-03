@@ -1,8 +1,11 @@
 .hero {
   background-color: rgba(104, 183, 56, 0.85);
+  padding: 27px 35px 0;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     background-color: $light-background-color;
+    padding: 65px 30px 0;
   }
 }
 
@@ -13,12 +16,15 @@
   line-height: 36px;
   text-align: center;
   color: $light-text-color;
+  margin: 0 0 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
     text-align: left;
     color: $header-primary-color;
+    width: 420px;
+    margin: 0 0 40px 90px;
   }
 }
 
@@ -29,12 +35,14 @@
   text-align: center;
   text-transform: uppercase;
   color: $light-text-color;
+  margin: 0 0 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     text-align: left;
     color: $header-primary-color;
+    margin: 0 0 50px 90px;
   }
 }
 
@@ -45,4 +53,12 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    min-height: 54px;
+    padding: 14px 26px;
+    margin: 0 0 15px 90px;
+    text-align: left;
+  }
 }
