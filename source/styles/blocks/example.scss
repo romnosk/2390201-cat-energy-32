@@ -1,36 +1,141 @@
 .example {
   background-color: #eaeaea;
+  padding: 25px 20px 40px;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 30px 100px;
+  }
 }
 
 .example__title {
+  margin: 0 0 40px;
   font-family: $header-primary-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $header-primary-color;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 60px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+.example__agenda {
+  margin: 0 0 20px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 55px;
+    width: 708px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__parameters-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+.example__list {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 0 20px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: left;
+    gap: 43px;
+  }
+}
+
+.example__item {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .example__number {
+  display: block;
   font-family: $header-primary-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
   color: $header-primary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 27px;
+  }
 }
 
 .example__description {
+  display: block;
   font-size: 12px;
   line-height: 12px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__price {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
   font-family: $header-primary-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: $header-primary-color;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    margin-left: auto;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    margin: 0 auto 0 0;
+  }
+}
+
+.example__price-number {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto 0 0;
+  }
+}
+
+.example__price-description {
+  margin: 0;
 }
 
 .example__slider {

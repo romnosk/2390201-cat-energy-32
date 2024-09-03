@@ -3,5 +3,6 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $light-text-color;
-  background-color: #68b73b;
+  background-color: $button-background-color;
+  box-sizing: border-box;
 }
