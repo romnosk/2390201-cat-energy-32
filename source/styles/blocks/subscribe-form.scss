@@ -1,3 +1,15 @@
+.subscribe-form {
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+  }
+}
+
 .subscribe-form__field {
   font-family: $header-primary-font;
   font-weight: 400;
@@ -5,17 +17,25 @@
   line-height: 30px;
   color: #444444;
   text-transform: uppercase;
-  min-width: 280px;
+  width: 280px;
   min-height: 56px;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 376px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 496px;
+  }
 }
 
 .subscribe-form__button {
   font-size: 20px;
   line-height: 26px;
   border: none;
-  min-width: 280px;
+  width: 280px;
   min-height: 56px;
 }

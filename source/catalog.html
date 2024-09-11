@@ -24,8 +24,10 @@
       </a>
     </div>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="main-nav main-nav--mobile-closed">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active"><a class="site-list__link" href="index.html">главная</a></li>
         <li class="site-list__item"><a class="site-list__link" href="catalog.html">каталог продукции</a></li>
@@ -218,7 +220,7 @@
           <a class="good-card__button button" href="#">заказать</a>
         </li>
 
-        <li class="catalog__item good-card">
+        <li class="catalog__item catalog__item--show-all good-card">
           <h3 class="good-card__title good-card__title--show-all">Показать еще 100500 товаров</h3>
           <p class="good-card__feature good-card__feature--show-all">На самом деле вкусов гораздо больше!</p>
           <a class="good-card__button good-card__button--show-all button" href="#">показать все</a>
@@ -228,43 +230,47 @@
 
     <section class="extra-goods">
       <h2 class="extra-goods__title">Дополнительные товары</h2>
-      <ul class="extra-goods__list">
-        <li class="extra-goods__item extra-card">
-          <h3 class=" extra-card__title">сахарозаменитель</h3>
-          <p class="extra-card__measure">1 упаковка (100 г)</p>
-          <p class="extra-card__price">200 ₽</p>
-          <a class="extra-card__button button" href="#">заказать</a>
-        </li>
-        <li class="extra-goods__item extra-card">
-          <h3 class="extra-card__title">питьевая вода</h3>
-          <p class="extra-card__measure">5 литров</p>
-          <p class="extra-card__price">50 ₽</p>
-          <a class="extra-card__button button" href="#">заказать</a>
-        </li>
-        <li class="extra-goods__item extra-card">
-          <h3 class="extra-card__title">молоко</h3>
-          <p class="extra-card__measure">1 литр</p>
-          <p class="extra-card__price">100 ₽</p>
-          <a class="extra-card__button button" href="#">заказать</a>
-        </li>
-        <li class="extra-goods__item extra-card">
-          <h3 class="extra-card__title">витамины</h3>
-          <p class="extra-card__measure">1 упаковка (30 г)</p>
-          <p class="extra-card__price">300 ₽</p>
-          <a class="extra-card__button button" href="#">заказать</a>
-        </li>
-      </ul>
-      <p class="extra-goods__take-all">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
+      <div class="extra-goods__content-wrapper">
+        <ul class="extra-goods__list">
+          <li class="extra-goods__item extra-card">
+            <h3 class=" extra-card__title">сахарозаменитель</h3>
+            <p class="extra-card__measure">1 упаковка (100 г)</p>
+            <p class="extra-card__price">200 ₽</p>
+            <a class="extra-card__button button" href="#">заказать</a>
+          </li>
+          <li class="extra-goods__item extra-card">
+            <h3 class="extra-card__title">питьевая вода</h3>
+            <p class="extra-card__measure">5 литров</p>
+            <p class="extra-card__price">50 ₽</p>
+            <a class="extra-card__button button" href="#">заказать</a>
+          </li>
+          <li class="extra-goods__item extra-card">
+            <h3 class="extra-card__title">молоко</h3>
+            <p class="extra-card__measure">1 литр</p>
+            <p class="extra-card__price">100 ₽</p>
+            <a class="extra-card__button button" href="#">заказать</a>
+          </li>
+          <li class="extra-goods__item extra-card">
+            <h3 class="extra-card__title">витамины</h3>
+            <p class="extra-card__measure">1 упаковка (30 г)</p>
+            <p class="extra-card__price">300 ₽</p>
+            <a class="extra-card__button button" href="#">заказать</a>
+          </li>
+        </ul>
+        <p class="extra-goods__take-all">Закажите все<br>и получите чехол для<br>кота в подарок!</p>
+      </div>
     </section>
 
     <section class="subscribe">
       <h2 class="subscribe__title">Акции и новинки</h2>
-      <p class="subscribe__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
-      <form class="subscribe__form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-        <label class="subscribe-form__label visually-hidden" for="subscribe-email">Ввод адреса электронной почты</label>
-        <input class="subscribe-form__field" type="email" id="subscribe-email" name="subscribe-email" placeholder="кuklachev@gmail.com" required>
-        <button class="subscribe-form__button button" type="submit">Подписаться</button>
-      </form>
+      <div class="subscribe__content-wrapper">
+        <p class="subscribe__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+        <form class="subscribe__form subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="subscribe-form__label visually-hidden" for="subscribe-email">Ввод адреса электронной почты</label>
+          <input class="subscribe-form__field" type="email" id="subscribe-email" name="subscribe-email" placeholder="кuklachev@gmail.com" required>
+          <button class="subscribe-form__button button" type="submit">Подписаться</button>
+        </form>
+      </div>
     </section>
 
     <section class="invite-dealers">
@@ -287,14 +293,12 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__logo logo-words">
-      <a class="logo-words" href="index.html">
+    <div class="main-footer__wrapper">
+      <a class="main-footer__logo logo-words" href="index.html">
         <img class="logo-words__image" src="images/logo-cat-energy.svg" width="128" height="24" alt="CAT Energy.">
       </a>
-    </div>
 
-    <div class="main-footer__social social">
-      <ul class="social__list">
+      <ul class="main-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">ВКонтакте</span>
@@ -310,13 +314,8 @@
           </a>
         </li>
       </ul>
-    </div>
 
-    <div class="main-footer__copyright copyright">
-      <a class="copyright__link copyright__link--text" href="https://htmlacademy.ru">HTML Academy</a>
-      <a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru">
-        <span class="visually-hidden">Логотип HTML Academy</span>
-      </a>
+      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru">HTML Academy</a>
     </div>
   </footer>
 

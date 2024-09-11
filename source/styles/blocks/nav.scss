@@ -7,6 +7,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    position: relative;
     align-items: center;
     flex-wrap: wrap;
     width: 436px;
@@ -19,6 +20,14 @@
   }
 }
 
+.main-nav--mobile-closed .main-nav__list {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
 .main-nav__toggle {
   padding: 0;
   width: 18px;
@@ -28,6 +37,14 @@
   background-position: center;
   background-color: $light-background-color;
   border: none;
+}
+
+.main-nav--mobile-closed .main-nav__toggle {
+  background-image: url("../../icons/stack.svg#icon-menu-burger");
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav--nojs .main-nav__toggle {
