@@ -1,3 +1,39 @@
 .catalog__list {
   list-style-type: none;
+  padding: 0;
+  margin: 40px auto 25px;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 140px 60px;
+    margin: 84px auto 74px;
+    width: 708px;
+    position: relative;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 245px);
+    gap: 144px 80px;
+    width: 1220px;
+    margin: 84px auto 71px;
+  }
+}
+
+.catalog__item {
+  @media (min-width: $tablet-width) {
+    box-sizing: border-box;
+    width: 324px;
+    padding: 0 37px 40px;
+    background-color: $darker-background-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
+}
+
+.catalog__item--show-all {
+  background-color: $light-background-color;
 }

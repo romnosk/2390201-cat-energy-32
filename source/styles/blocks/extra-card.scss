@@ -1,3 +1,16 @@
+.extra-card {
+  display: grid;
+  grid-template-columns: 140px 140px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 316px 223px 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 326px 244px 82px 244px;
+  }
+}
+
 .extra-card__title {
   font-family: $header-primary-font;
   font-weight: 400;
@@ -5,10 +18,78 @@
   line-height: 16px;
   text-transform: uppercase;
   color: #222222;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin: 13px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 25px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 10px 0;
+  }
 }
 
-.extra-card__measure,
-.extra-card__price {
+.extra-card__measure {
   font-size: 14px;
   line-height: 14px;
+  margin: 0 0 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 25px 0;
+    text-align: right;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 10px 0;
+    text-align: left;
+  }
+}
+
+.extra-card__price {
+  text-align: right;
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0 0 15px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 25px 0;
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 10px 0;
+    text-align: left;
+  }
+}
+
+.extra-card__button {
+  text-align: center;
+  padding: 10px;
+  grid-column: 1/3;
+  grid-row: 3/4;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/4;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
 }

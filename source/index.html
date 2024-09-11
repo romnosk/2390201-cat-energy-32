@@ -24,10 +24,10 @@
       </a>
     </div>
 
-    <nav class="main-nav main-nav--closed main-nav--nojs">
+    <nav class="main-nav main-nav--mobile-closed">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active"><a class="site-list__link" href="#">главная</a></li>
+        <li class="site-list__item site-list__item--active"><a class="site-list__link" href="index.html">главная</a></li>
         <li class="site-list__item"><a class="site-list__link" href="catalog.html">каталог продукции</a></li>
         <li class="site-list__item"><a class="site-list__link" href="#">подбор программы</a></li>
       </ul>
@@ -35,7 +35,7 @@
   </header>
 
   <main class="main-container">
-    <h1 class="main-container__title visually-hidden">Магазин функционального спец.питания для котов</h1>
+    <h1 class="main-container__title visually-hidden">Магазин функционального специального питания для котов</h1>
     <section class="hero">
       <h2 class="hero__title">Функциональное питание для котов</h2>
       <p class="hero__slogan">Занялся собой? Займись котом!</p>
@@ -74,42 +74,46 @@
     </section>
 
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
-      <p class="example__agenda">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <div class="example__parameters-wrapper">
-        <dl class="example__list">
-          <div class="example__item">
-            <dt class="example__number">5 КГ</dt>
-            <dd class="example__description">снижение веса</dd>
+      <div class="example__wrapper">
+        <h2 class="example__title">Живой пример</h2>
+        <p class="example__agenda">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <div class="example__parameters-wrapper">
+          <dl class="example__list">
+            <div class="example__item">
+              <dt class="example__number">5 КГ</dt>
+              <dd class="example__description">снижение веса</dd>
+            </div>
+            <div class="example__item">
+              <dt class="example__number">60 ДНЕЙ</dt>
+              <dd class="example__description">затрачено времени</dd>
+            </div>
+          </dl>
+          <div class="example__price">
+            <p class="example__price-description">Затраты на питание:</p>
+            <p class="example__price-number">15 000 РУБ.</p>
           </div>
-          <div class="example__item">
-            <dt class="example__number">60 ДНЕЙ</dt>
-            <dd class="example__description">затрачено времени</dd>
-          </div>
-        </dl>
-        <div class="example__price">
-          <p class="example__price-description">Затраты на питание:</p>
-          <p class="example__price-number">15 000 РУБ.</p>
+        </div>
+        <div class="example__slider slider">
+          <ul class="slider__list">
+            <li class="slider__item slider__item--before">
+              <picture>
+                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet@1x.png 1x, images/cat-fat-tablet@2x.png 2x">
+                <img class="slider__image" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис до похудения.">
+              </picture>
+            </li>
+            <li class="slider__item slider__item--after">
+              <picture>
+                <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x">
+                <img class="slider__image" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис после похудения.">
+              </picture>
+            </li>
+          </ul>
+
+          <button class="slider__toggle" type="button">
+            <span class="visually-hidden">Кнопка показа кота Бориса до и после похудения.</span>
+          </button>
         </div>
       </div>
-      <ul class="example__slider">
-        <li class="example__slider-item example__slider-item--before">
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet@1x.png 1x, images/cat-fat-tablet@2x.png 2x">
-            <img class="example__slider-image" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис до похудения.">
-          </picture>
-        </li>
-        <li class="example__slider-item example__slider-item--after">
-          <picture>
-            <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/cat-slim-tablet@1x.png 1x, images/cat-slim-tablet@2x.png 2x">
-            <img class="example__slider-image" src="images/cat-slim-mobile@1x.png" srcset="images/cat-slim-mobile@2x.png 2x" width="280" height="256" alt="Кот Борис после похудения.">
-          </picture>
-        </li>
-      </ul>
-
-      <button class="example__slider-toggle" type="button">
-        <span class="visually-hidden">Кнопка показа кота Бориса до и после похудения.</span>
-      </button>
     </section>
 
     <section class="invite-dealers">
@@ -131,14 +135,12 @@
   </main>
 
   <footer class="main-footer">
-    <div class="main-footer__logo logo-words">
-      <a class="logo-words" href="index.html">
+    <div class="main-footer__wrapper">
+      <a class="main-footer__logo logo-words" href="index.html">
         <img class="logo-words__image" src="images/logo-cat-energy.svg" width="128" height="24" alt="CAT Energy.">
       </a>
-    </div>
 
-    <div class="main-footer__social social">
-      <ul class="social__list">
+      <ul class="main-footer__social social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">ВКонтакте</span>
@@ -154,13 +156,8 @@
           </a>
         </li>
       </ul>
-    </div>
 
-    <div class="main-footer__copyright copyright">
-      <a class="copyright__link copyright__link--text" href="https://htmlacademy.ru">HTML Academy</a>
-      <a class="copyright__link copyright__link--logo" href="https://htmlacademy.ru">
-        <span class="visually-hidden">Логотип HTML Academy</span>
-      </a>
+      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru">HTML Academy</a>
     </div>
   </footer>
 

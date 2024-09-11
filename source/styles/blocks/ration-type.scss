@@ -1,15 +1,21 @@
 .ration-type__list {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
 
   @media (min-width: $desktop-width) {
     flex-flow: row wrap;
     justify-content: space-between;
-    gap: 30px;
-    padding: 82px 110px 71px;
+    gap: 80px;
+    width: 1220px;
+    padding: 82px 0 71px;
   }
 }
 
@@ -18,12 +24,12 @@
   background-color: $darker-background-color;
   background-repeat: no-repeat;
   min-width: 280px;
-  margin: 10px 20px;
+  margin: 10px 0;
   padding: 20px;
 
   @media (min-width: $tablet-width) {
     min-width: 708px;
-    margin: 0 30px 30px;
+    margin: 0 0 30px;
     padding: 77px 52px 53px;
   }
 
