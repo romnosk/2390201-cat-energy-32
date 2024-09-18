@@ -1,17 +1,28 @@
 .hero {
-  background-color: rgba(104, 183, 56, 0.85);
-  padding: 27px 35px 0;
-  text-align: center;
+  background:
+    linear-gradient(to top, #ffffff 180px, rgba(105, 183, 56, 0.85) 180px),
+    url("../../images/index-cat-background-mobile@1x.jpg") no-repeat center top,
+    linear-gradient(to top, #ffffff 180px, #4e4d52 180px);
+  padding: 27 0 0;
 
   @media (min-width: $tablet-width) {
+    background: none;
     background-color: $light-background-color;
     padding: 65px 0;
-    width: 704px;
+    width: 708px;
     margin: 0 auto;
+    display: grid;
+    align-items: start;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 708px;
   }
 
   @media (min-width: $desktop-width) {
+    background-color: transparent;
+    padding: 29px 0;
     width: 1220px;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 447px 1fr;
   }
 }
 
@@ -22,7 +33,8 @@
   line-height: 36px;
   text-align: center;
   color: $light-text-color;
-  margin: 0 0 25px;
+  width: 250px;
+  margin: 0 auto 25px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -31,6 +43,13 @@
     color: $header-primary-color;
     width: 420px;
     margin: 0 0 40px 90px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 80px 0 40px 80px;
+    grid-column: 1/3;
   }
 }
 
@@ -41,14 +60,44 @@
   text-align: center;
   text-transform: uppercase;
   color: $light-text-color;
-  margin: 0 0 29px;
+  width: 250px;
+  margin: 0 auto 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     text-align: left;
     color: $header-primary-color;
-    margin: 0 0 50px 90px;
+    width: 420px;
+    margin: 0 0 21px 90px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 52px 80px;
+    grid-column: 1/3;
+  }
+}
+
+.hero__picture {
+  width: 280px;
+  height: 270px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 609px;
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    grid-column: 2/3;
+    grid-row: 1/-1;
   }
 }
 
@@ -61,10 +110,19 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
     width: 244px;
-    padding: 14px 26px;
-    margin: 0 0 15px 90px;
+    padding: 14px;
+    margin: 29px 0 0 90px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 80px;
   }
 }

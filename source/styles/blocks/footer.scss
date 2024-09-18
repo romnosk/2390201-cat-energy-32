@@ -21,6 +21,29 @@
   }
 }
 
+.main-footer__logo,
+.main-footer__social {
+  position: relative;
+}
+
+//Полоски между элементами меню в мобильной версии
+@media (max-width: $max-mobile-width) {
+  .main-footer__logo::after,
+  .main-footer__social::after {
+    position: absolute;
+    left: -76px;
+    width: 280px;
+    bottom: -23px;
+    height: 1px;
+    background-color: $divider-line-color;
+    content: "";
+  }
+
+  .main-footer__social::after {
+    left: -68px;
+  }
+}
+
 .main-footer__copyright {
   display: flex;
   justify-content: space-between;

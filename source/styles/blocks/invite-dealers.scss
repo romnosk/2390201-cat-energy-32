@@ -25,14 +25,6 @@
   }
 }
 
-// .invite-dealers__text-wrapper--catalog {
-//   background-color: $darker-background-color;
-
-//   @media (min-width: $desktop-width) {
-//     background-color: $light-background-color;
-//   }
-// }
-
 .invite-dealers__title {
   display: block;
   width: 140px;
@@ -79,4 +71,9 @@
   @media (min-width: $tablet-width) {
     margin-top: 19px;
   }
+}
+
+.invite-dealers__map {
+  display: block;
+  margin: 0 auto;
 }

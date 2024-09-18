@@ -2,9 +2,10 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 132px;
+  box-sizing: border-box;
+  min-width: 142px;
   margin: 0;
-  padding: 0;
+  padding: 0 5px;
   list-style-type: none;
 }
 
