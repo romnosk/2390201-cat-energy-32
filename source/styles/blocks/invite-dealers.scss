@@ -2,6 +2,14 @@
   position: relative;
 }
 
+.invite-dealers--catalog {
+  background-color: $darker-background-color;
+
+  @media (min-width: $desktop-width) {
+    background-color: $light-background-color;
+  }
+}
+
 .invite-dealers__text-wrapper {
   box-sizing: border-box;
   display: flex;
