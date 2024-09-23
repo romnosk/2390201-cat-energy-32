@@ -12,7 +12,7 @@
   position: relative;
 }
 
-.page__body::before {
+.page__body--index::before {
   @media (min-width: $desktop-width) {
     display: block;
     z-index: -1;
@@ -23,8 +23,8 @@
     width: 50%;
     min-height: 694px;
     background:
-      linear-gradient(to top, #ffffff 1px, rgba(105, 183, 56, 0.85) 1px),
+      linear-gradient(to top, $cats-gradient-color, $cats-gradient-color),
       url("../../images/index-cat-background-desktop@1x.jpg") no-repeat center right,
-      linear-gradient(to top, #ffffff 1px, #4e4d52 1px);
+      linear-gradient(to top, #4e4d52, #4e4d52);
   }
 }

@@ -1,41 +1,103 @@
-.extra-goods__title {
-  font-family: $header-primary-font;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 24px;
-  color: $header-primary-color;
+.extra-goods__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .extra-goods__content-wrapper {
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: space-between;
+  }
+}
+
+.extra-goods__title {
+  box-sizing: border-box;
+  position: relative;
+  font-family: $header-primary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  width: fit-content;
+  color: $header-primary-color;
+  margin: 0 0 36px;
+  background-color: $light-background-color;
+  box-shadow:
+    -225px 0 0 $light-background-color,
+    40px 0 0 $light-background-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    width: fit-content;
+    padding: 0 0 0 40px;
+    margin: 0 0 80px;
+    box-shadow: 40px 0 0 $light-background-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    padding: 0;
+    box-shadow:
+      -40px 0 0 $light-background-color,
+      40px 0 0 $light-background-color;
+  }
+}
+
+.extra-goods__title::before {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: $catalog-heading-line-color;
+  z-index: -1;
+  position: absolute;
+  width: 100vw;
+  top: 9px;
+  left: -50vw;
+  box-shadow: 100vw 0 0 $catalog-heading-line-color;
+
+  @media (min-width: $tablet-width) {
+    top: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 18px;
   }
 }
 
 .extra-goods__list {
   list-style-type: none;
   padding: 0;
-  margin: 36px 0 35px;
+  margin: 0 0 35px;
 
   @media (min-width: $tablet-width) {
-    margin: 80px 30px 70px;
+    margin: 0 0 70px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 80px 0 110px;
+    margin: 0;
   }
 }
 
 .extra-goods__item {
-  padding: 0 20px;
+  padding: 13px 0 19px;
+  border-top: 1px solid $extra-line-color;
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
-    width: 708px;
     padding: 0 38px 28px;
     outline: 1px solid $extra-line-color;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,28 +108,38 @@
   }
 }
 
+.extra-goods__item:last-child {
+  border-bottom: 1px solid $extra-line-color;
+}
+
+
 .extra-goods__take-all {
   box-sizing: border-box;
   display: block;
   width: 280px;
-  margin: 0 20px;
+  margin: 0;
   padding: 186px 0 43px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   color: $light-text-color;
-  background-color: rgba(104, 183, 56, 0.85);
-  background-repeat: no-repeat;
-  background-size: 78px 80px;
-  background-position: center 60px;
-  background-image: url("../../icons/stack.svg#icon-gift");
+  background:
+    url("../../icons/stack.svg#icon-gift") no-repeat center 60px,
+    linear-gradient(to top, $cats-gradient-color, $cats-gradient-color),
+    url("../../images/cat-in-backpack-mobile@1x.jpg") no-repeat center center;
+  background-color: $cats-gradient-color;
+  background-size: 78px 80px, cover, cover;
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    margin: 0 30px;
     padding: 70px 125px 70px 420px;
     text-align: left;
-    background-position: 77px center;
+    background:
+      url("../../icons/stack.svg#icon-gift") no-repeat 77px center,
+      linear-gradient(to top, $cats-gradient-color, $cats-gradient-color),
+      url("../../images/cat-in-backpack-tablet@1x.jpg") no-repeat center center;
+    background-color: $cats-gradient-color;
+    background-size: 78px 80px, cover, cover;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,6 +147,11 @@
     margin: 0;
     padding: 185px 42px 43px;
     text-align: center;
-    background-position: center  56px;
+    background:
+      url("../../icons/stack.svg#icon-gift") no-repeat center 56px,
+      linear-gradient(to top, $cats-gradient-color, $cats-gradient-color),
+      url("../../images/cat-in-backpack-desktop@1x.jpg") no-repeat center center;
+    background-color: $cats-gradient-color;
+    background-size: 78px 80px, cover, cover;
   }
 }
