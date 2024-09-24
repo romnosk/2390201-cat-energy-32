@@ -1,7 +1,11 @@
 .hero {
   background:
     linear-gradient(to top, #ffffff 180px, rgba(105, 183, 56, 0.85) 180px),
-    url("../../images/index-cat-background-mobile@1x.jpg") no-repeat center top,
+    image-set(
+      url("../../images/index-cat-background-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/index-cat-background-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/index-cat-background-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/index-cat-background-mobile@2x.jpg") type("image/jpeg") 2x) no-repeat center top,
     linear-gradient(to top, #ffffff 180px, #4e4d52 180px);
   padding: 27 0 0;
 

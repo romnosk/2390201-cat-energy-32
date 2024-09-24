@@ -24,7 +24,11 @@
     min-height: 694px;
     background:
       linear-gradient(to top, $cats-gradient-color, $cats-gradient-color),
-      url("../../images/index-cat-background-desktop@1x.jpg") no-repeat center right,
+      image-set(
+        url("../../images/index-cat-background-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/index-cat-background-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/index-cat-background-desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/index-cat-background-desktop@2x.jpg") type("image/jpeg") 2x) no-repeat center right,
       linear-gradient(to top, #4e4d52, #4e4d52);
   }
 }

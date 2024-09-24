@@ -3,7 +3,16 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $light-text-color;
-  background-color: $button-background-color;
+  background-color: $button-color;
   box-sizing: border-box;
   display: block;
+}
+
+.button:hover {
+  background-color: $button-hover-color;
+}
+
+.button:active {
+  background-color: $button-hover-color;
+  color: rgba($color: $light-text-color, $alpha: 0.3);
 }
