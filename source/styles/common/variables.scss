@@ -15,7 +15,10 @@ $cats-gradient-color: rgba(105, 183, 56, 0.85);
 $footer-color: #666666;
 $footer-active-color: #68b738;
 
-$button-background-color: #68b73b;
+$button-color: #68b73b;
+$button-hover-color: #5eaa2f;
+$all-goods-button-color: #f2f2f2;
+$all-goods-button-hover-color: #ebebeb;
 
 $slider-toggle-color: #666666;
 $slider-toggle-hover-color: #68b738;
@@ -26,6 +29,8 @@ $extra-line-color: #cdcdcd;
 $example-border-color: #e6e6e6;
 $catalog-items-border-color:#ebebeb;
 $catalog-heading-line-color: #68b738;
+$input-field-border-color: #e7e7e7;
+$input-field-error-color: #ff8282;
 
 $max-mobile-width: 767px;
 $tablet-width: 768px;

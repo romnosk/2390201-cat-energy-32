@@ -2,10 +2,10 @@
   display: grid;
   grid-template-columns: 140px 140px;
   justify-content: center;
+  align-items: start;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 250px;
-    align-items: start;
   }
 
   @media (min-width: $desktop-width) {
@@ -163,5 +163,11 @@
 
 .good-card__button--show-all {
   color: $text-primary-color;
-  background-color: #f2f2f2;
+  background-color: $all-goods-button-color;
+}
+
+.good-card__button--show-all:hover,
+.good-card__button--show-all:active {
+  color: $text-primary-color;
+  background-color: $all-goods-button-hover-color;
 }

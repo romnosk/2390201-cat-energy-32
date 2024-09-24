@@ -21,7 +21,14 @@
   }
 }
 
-.main-footer__logo,
+.main-footer__logo {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 40px 0 0;
+  }
+}
+
 .main-footer__social {
   position: relative;
 }

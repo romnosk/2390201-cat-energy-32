@@ -1,5 +1,10 @@
 .invite-dealers {
-  position: relative;
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1220px 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+  }
 }
 
 .invite-dealers--catalog {
@@ -24,9 +29,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    left: 110px;
-    top: 95px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 0;
+    z-index: 2;
     background-color: $light-background-color;
     width: 565px;
     padding: 60px 80px;
@@ -82,6 +88,39 @@
 }
 
 .invite-dealers__map {
+  border: none;
   display: block;
-  margin: 0 auto;
+  width: 100%;
+  height: 362px;
+  background:
+    image-set(
+      url("../../images/location-mobile@1x.webp") type("image/webp") 1x,
+      url("../../images/location-mobile@2x.webp") type("image/webp") 2x,
+      url("../../images/location-mobile@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/location-mobile@2x.jpg") type("image/jpeg") 2x) no-repeat center center;
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    background:
+      image-set(
+        url("../../images/location-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/location-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/location-tablet@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/location-tablet@2x.jpg") type("image/jpeg") 2x) no-repeat center center;
+    background-size: cover;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background:
+      image-set(
+        url("../../images/location-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/location-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/location-desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/location-desktop@2x.jpg") type("image/jpeg") 2x) no-repeat center center;
+    background-size: cover;
+  }
 }
