@@ -1,11 +1,13 @@
 .good-card {
   display: grid;
   grid-template-columns: 140px 140px;
+  grid-template-rows: auto 1fr auto;
   justify-content: center;
   align-items: start;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 250px;
+    grid-template-rows: auto auto 1fr auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -13,20 +15,28 @@
   }
 }
 
-.good-card__link {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
+.good-card__link-picture {
   text-decoration: none;
-  grid-column: 1/3;
-  grid-row: 1/2;
-  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/3;
 
   @media (min-width: $tablet-width) {
-    flex-direction: column-reverse;
-    align-items: center;
-    grid-column: 1/2;
-    grid-row: 1/3;
+    display: block;
+    grid-row: 1/2;
+    margin: -72px auto 0;
+  }
+}
+
+.good-card__link-title {
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 22px auto 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 12px auto 0;
   }
 }
 
@@ -38,10 +48,9 @@
   width: 76px;
   text-transform: uppercase;
   color: #222222;
-  margin: 20px 0 0 75px;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 180px 0 20;
     font-size: 20px;
     line-height: 24px;
     text-align: center;
@@ -51,17 +60,17 @@
 
 .good-card__image {
   display: block;
-  position: absolute;
-  left: 28px;
-  top: 23px;
+  object-fit: cover;
+  width: 140px;
+  height: 107px;
 
   @media (min-width: $tablet-width) {
-    left: 44px;
-    top: -40px;
+    width: 200px;
+    height: 210px;
   }
 
   @media (min-width: $desktop-width) {
-    left: 0;
+    width: 169px;
   }
 }
 
@@ -71,9 +80,13 @@
   grid-row: 2/3;
 
   @media (min-width: $tablet-width) {
-    margin: 20px 0 27px;
+    margin: 21px 0 32px;
     grid-column: 1/2;
     grid-row: 3/4;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 23px 0 37px;
   }
 }
 
@@ -84,7 +97,8 @@
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 10px;
+    padding: 5px 0;
+    border-bottom: 1px solid $extra-line-color;
     font-size: 16px;
     line-height: 20px;
   }
@@ -131,9 +145,7 @@
 
   @media (min-width: $desktop-width) {
     width: 170px;
-    align-self: center;
-    padding: 160px 0 26px;
-    grid-column: 1/2;
+    padding: 150px 0 26px;
   }
 }
 
@@ -150,13 +162,14 @@
   @media (min-width: $tablet-width) {
     width: 250px;
     align-self: center;
-    padding: 0 40px 95px;
+    padding: 0 40px 82px;
     grid-column: 1/2;
+    line-height: 18px;
   }
 
   @media (min-width: $desktop-width) {
     width: 170px;
-    padding: 0 0 95px;
+    padding: 0 0 90px;
     grid-column: 1/2;
   }
 }

@@ -37,6 +37,10 @@
   border: 1px solid $extra-line-color;
 }
 
+.subscribe-form__field:user-invalid {
+  outline: 2px solid $input-field-error-color;
+}
+
 .subscribe-form__button {
   font-size: 20px;
   line-height: 26px;
