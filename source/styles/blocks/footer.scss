@@ -23,10 +23,26 @@
 
 .main-footer__logo {
   position: relative;
+  display: block;
+  min-width: 128px;
+  min-height: 24px;
+  mask-image: url("../../images/logo-cat-energy.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: $logo-color;
 
   @media (min-width: $tablet-width) {
     margin: 0 40px 0 0;
   }
+}
+
+.main-footer__logo:hover,
+.main-footer__logo:focus-visible {
+  background-color: $logo-hover-color;
+}
+
+.main-footer__logo:active {
+  background-color: $logo-active-color;
 }
 
 .main-footer__social {
@@ -35,19 +51,22 @@
 
 //Полоски между элементами меню в мобильной версии
 @media (max-width: $max-mobile-width) {
-  .main-footer__logo::after,
+  .main-footer__social::before,
   .main-footer__social::after {
     position: absolute;
-    left: -76px;
+    left: -68px;
     width: 280px;
-    bottom: -23px;
     height: 1px;
     background-color: $divider-line-color;
     content: "";
   }
 
+  .main-footer__social::before {
+    top: -20px;
+  }
+
   .main-footer__social::after {
-    left: -68px;
+    bottom: -20px;
   }
 }
 
