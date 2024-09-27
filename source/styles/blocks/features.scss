@@ -17,12 +17,12 @@
   font-size: 36px;
   line-height: 40px;
   color: $header-primary-color;
-  margin: 10px 0 40px;
+  margin: 0 0 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin: 15px 0 32px;
+    margin: 0 0 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -33,7 +33,7 @@
 .features__list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 0 24px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -46,9 +46,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 0;
+    gap: 20px 80px;
     max-width: 1224px;
     padding: 0;
+    justify-content: left;
   }
 }
 
@@ -61,10 +62,12 @@
   min-width: 280px;
 
   @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
     min-width: 0;
-    max-width: 240px;
+    max-width: 245px;
     flex-direction: column;
-    margin-bottom: 75px;
+    margin-bottom: 57px;
     counter-increment: feature-id 1;
   }
 }
@@ -105,6 +108,7 @@
 .features__item--changes::before {
   background-image: url("../../icons/stack.svg#icon-balance");
   background-size: 26px 31px;
+  max-width: 245px;
 }
 
 @media (min-width: $tablet-width) {
@@ -112,7 +116,7 @@
     display: block;
     position: absolute;
     top: 0;
-    left: 100px;
+    left: 114px;
     content: counter(feature-id);
     font-family: $header-primary-font;
     font-weight: 400;

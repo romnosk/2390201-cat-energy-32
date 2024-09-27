@@ -7,12 +7,12 @@
       url("../../images/index-cat-background-mobile@1x.jpg") type("image/jpeg") 1x,
       url("../../images/index-cat-background-mobile@2x.jpg") type("image/jpeg") 2x) no-repeat center top,
     linear-gradient(to top, #ffffff 180px, #4e4d52 180px);
-  padding: 27 0 0;
+  padding: 27px 0 0;
 
   @media (min-width: $tablet-width) {
     background: none;
     background-color: $light-background-color;
-    padding: 65px 0;
+    padding: 65px 0 0;
     width: 708px;
     margin: 0 auto;
     display: grid;
@@ -23,7 +23,7 @@
 
   @media (min-width: $desktop-width) {
     background-color: transparent;
-    padding: 29px 0;
+    padding: 29px 0 0;
     width: 1220px;
     grid-template-rows: auto auto 1fr;
     grid-template-columns: 447px 1fr;

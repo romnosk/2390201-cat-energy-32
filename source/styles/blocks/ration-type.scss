@@ -4,10 +4,11 @@
   flex-direction: column;
   width: 280px;
   margin: 0 auto;
-  padding: 0;
+  padding: 20px 0 0;
 
   @media (min-width: $tablet-width) {
     width: 708px;
+    padding: 0 0 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,7 +16,7 @@
     justify-content: space-between;
     gap: 80px;
     width: 1220px;
-    padding: 82px 0 0;
+    padding: 134px 0 0;
   }
 }
 
@@ -24,7 +25,7 @@
   background-color: $darker-background-color;
   background-repeat: no-repeat;
   min-width: 280px;
-  margin: 10px 0;
+  margin: 0 0 20px;
   padding: 20px;
 
   @media (min-width: $tablet-width) {
