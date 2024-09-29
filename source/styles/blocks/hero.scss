@@ -65,7 +65,7 @@
   text-transform: uppercase;
   color: $light-text-color;
   width: 250px;
-  margin: 0 auto 29px;
+  margin: 0 auto 31px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -87,7 +87,7 @@
 .hero__picture {
   width: 280px;
   height: 270px;
-  margin: 0 auto;
+  margin: 0 auto 4px;
 
   @media (min-width: $tablet-width) {
     width: 708px;

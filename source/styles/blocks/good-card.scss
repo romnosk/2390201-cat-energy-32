@@ -75,12 +75,12 @@
 }
 
 .good-card__features-list {
-  margin: 14px 0 21px;
+  margin: 14px 0 22px;
   grid-column: 2/3;
   grid-row: 2/3;
 
   @media (min-width: $tablet-width) {
-    margin: 21px 0 32px;
+    margin: 19px 0 32px;
     grid-column: 1/2;
     grid-row: 3/4;
   }

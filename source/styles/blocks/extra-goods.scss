@@ -90,18 +90,18 @@
 }
 
 .extra-goods__item {
-  padding: 13px 0 19px;
+  padding: 13px 0 18px;
   border-top: 1px solid $extra-line-color;
 
   @media (min-width: $tablet-width) {
     box-sizing: border-box;
-    padding: 0 38px 28px;
+    padding: 3px 38px 28px;
     outline: 1px solid $extra-line-color;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 15px 0;
+    padding: 16px 0 15px;
     width: 894px;
     outline: none;
     border-top: 1px solid $extra-line-color;
@@ -112,13 +112,12 @@
   border-bottom: 1px solid $extra-line-color;
 }
 
-
 .extra-goods__take-all {
   box-sizing: border-box;
   display: block;
   width: 280px;
   margin: 0;
-  padding: 186px 0 43px;
+  padding: 187px 0 43px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;

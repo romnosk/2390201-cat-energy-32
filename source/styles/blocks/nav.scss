@@ -70,6 +70,8 @@
 }
 
 .main-nav--closed .main-nav__toggle {
+  width: 24px;
+  height: 24px;
   background-image: url("../../icons/stack.svg#icon-menu-burger");
 
   @media (min-width: $tablet-width) {

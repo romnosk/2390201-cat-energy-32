@@ -11,9 +11,9 @@
   }
 }
 
-//Полоска в планшетной версии между features и example
-@media (min-width: $tablet-width) and (max-width: $max-tablet-width) {
-  .example::before {
+// //Полоска в планшетной версии между features и example
+.example::before {
+  @media (min-width: $tablet-width) {
     position: absolute;
     right: 0;
     left: 0;
@@ -22,7 +22,12 @@
     background-color: $example-border-color;
     content: "";
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $light-background-color;
+  }
 }
+
 
 .example__wrapper {
   width: 280px;
@@ -36,7 +41,7 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 70px 0 21px;
+    padding: 70px 0 0;
     display: grid;
     align-items: start;
     grid-template-columns: 1fr 560px;
@@ -145,9 +150,9 @@
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
-    line-height: 27px;
+    line-height: 37px;
     width: 162px;
-    padding: 15px 15px 20px;
+    padding: 14px 15px 20px;
   }
 }
 
@@ -190,8 +195,9 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    gap: 9px;
     font-size: 20px;
-    margin: 10px 0 0 auto;
+    margin: 0 0 0 auto;
   }
 
   @media (min-width: $desktop-width) {

@@ -26,7 +26,7 @@
   background-repeat: no-repeat;
   min-width: 280px;
   margin: 0 0 20px;
-  padding: 20px;
+  padding: 23px 20px 18px;
 
   @media (min-width: $tablet-width) {
     min-width: 708px;
@@ -63,7 +63,7 @@
 
   @media (min-width: $tablet-width) {
     background-size: 268px 200px;
-    background-position: 411px 91px;
+    background-position: 413px 95px;
   }
 
   @media (min-width: $desktop-width) {
@@ -128,7 +128,8 @@
   display: flex;
   align-items: center;
   margin: 0;
-  min-width: 139px;
+  min-width: 134px;
+  min-height: 25px;
   font-family: $header-primary-font;
   font-size: 16px;
   line-height: 16px;
@@ -139,6 +140,8 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    min-width: 165px;
+    min-height: 38px;
   }
 }
 
